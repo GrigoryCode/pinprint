@@ -23,17 +23,22 @@ a:hover {
 }
 
 .btn-primary {
-background-color: rgba(255,255,255,0);
+background-color: rgba(255,255,255,0.9);
 border-color: white;
-
+color: black;
+width: 120px;
 }
 
 .btn-primary:hover {
-background-color: rgba(255,255,255,0.2);
+background-color: rgba(255,255,255,0);
 border-color: white;
 
 }
 
 .my-4 {
   color: white;
+}
+
+.text-center {
+  margin-top: 20%
 }

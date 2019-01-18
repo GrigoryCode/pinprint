@@ -1,11 +1,15 @@
-<div class="jumbotron">
-  <h1 class="display-4"><b>Live is</b></h1>
-  <div class="call">
-    <p class="lead"><b>Either adventure OR NOTHING</b></p>
+<% if user_signed_in? %>
+
+<% else %>
+  <div class="jumbotron">
+    <h1 class="display-4"><b>Live is</b></h1>
+    <div class="call">
+      <p class="lead"><b>Either adventure OR NOTHING</b></p>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <%= link_to "Sign up", new_user_registration_path, :class => "btn btn-outline-light btn-lg" %>
+      <%= link_to "Log in", new_user_session_path, :class => "btn btn-outline-light btn-lg" %>
+    </div>
   </div>
-  <hr class="my-4">
-  <div class="text-center">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
-    <a class="btn btn-primary btn-lg " href="#" role="button">Log in</a>
-  </div>
-</div>
+<% end %>

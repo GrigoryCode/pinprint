@@ -38,3 +38,25 @@ width: 120px;
 .nav {
   padding-top: 20px;
 }
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+//nav links
+#navbarNav > ul > li > a {
+  color: white;
+}
+
+#navbarNav > ul > li > a:hover {
+  color: #eee;
+}
+
+//nav brand
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #eee;
+}
